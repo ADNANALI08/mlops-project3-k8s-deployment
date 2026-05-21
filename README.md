@@ -1,16 +1,24 @@
 # MLOps Project 3 — K8s Cluster Deployment
 
-**Name:** [ADNAN ALI]
+**Name:** Adnan Ali
 **SAP ID:** [70148007]
-**Section:** [1st]
+**Section:** [Your Section]
 **Semester:** 6th
 
-## Stack
-Terraform · Minikube · Kubeflow Pipelines · MLflow · Scikit-learn · Docker · kubectl · Nginx · WSL Ubuntu
+## Project Overview
+End-to-end MLOps pipeline on Kubernetes using:
+- **Terraform** — Infrastructure as Code (KIND cluster provisioning)
+- **Kubernetes** — Local K8s cluster via KIND
+- **Kubeflow Pipelines** — ML workflow orchestration
+- **MLflow** — Model registry (registered + Production alias)
+- **MLflow Serving** — Model inference endpoint
+- **K8s Deployment** — 3-replica ReplicaSet
+- **Nginx Ingress** — Load balancing
 
-## Project Phases
-1. **Terraform IaC** — Minikube K8s cluster provisioned via terraform apply
-2. **Kubeflow Pipelines** — ML workflow deployed on K8s
-3. **ML Pipeline** — Iris classification (load → train → evaluate), Accuracy: 1.0
-4. **MLflow Registry** — Model registered and aliased as Production
-5. **K8s Deployment** — 3-replica ReplicaSet with Nginx Ingress load balancer
+## Results
+- Pipeline Accuracy: 1.0000
+- Replicas: 3/3 Running
+- Prediction endpoint: {"predictions":[0]}
+
+## GitHub Repo
+https://github.com/ADNANALI08/mlops-project3-k8s-deployment
