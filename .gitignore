@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.lock.hcl
+mlruns/
+*.pkl
+mlops-env/
+local_outputs/
